@@ -6,3 +6,5 @@ out*.png
 *.caffemodel
 *.t7
 models/*.caffemodel
+!styles/
+!contents/
