@@ -5,5 +5,4 @@ out*.png
 *.prototxt*
 *.caffemodel
 *.t7
-models/
-!models/download_models.sh
+models/*.caffemodel
