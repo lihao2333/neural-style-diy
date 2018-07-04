@@ -50,7 +50,7 @@ function Gram:updateOutput(input)
   local C, H, W = input:size(1), input:size(2), input:size(3)
   local x_flat = input:view(C, H * W)
   self.output:resize(C, C)
-  self.output:mm(x_flat, x_flat:t())
+  self.output:mm(x_flat, x_flat:t())--自己乘以自己的转置
   return self.output
 end
 

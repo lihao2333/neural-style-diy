@@ -19,7 +19,7 @@ function train(p)
     local ext = paths.extname(output_image)
     local basename = paths.basename(output_image, ext)
     local directory = paths.dirname(output_image)
-    return string.format('%s/%s_%d.%s',directory, basename, iteration, ext)
+    return string.format('%s/%s_%04d.%s',directory, basename, iteration, ext)
   end
   local function maybe_save(t)
     local should_save = p.save_iter >= 1 and t % p.save_iter == 0
