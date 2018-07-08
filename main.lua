@@ -31,7 +31,7 @@ cmd:option('-output_image', 'output/out.png')
 local function main(p)
     setup_device(p)-- get dtype
 	setup_images(p)-- get init_image, content_image, style_image
---	setup_network_1(p)
+	setup_network_1(p)
 	setup_network_2(p)
 	train(p)
 end
